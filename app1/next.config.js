@@ -28,7 +28,7 @@ module.exports = {
     config.cache = false;
     withModuleFederation(config, options, mfConf);
     if (!isServer) {
-      config.output.publicPath = `https://micro-fe-demo-app1/_next/`;
+      config.output.publicPath = `https://micro-fe-demo-app1.vercel.app/_next/`;
     }
 
     return config;
