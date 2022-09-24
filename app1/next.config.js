@@ -6,9 +6,6 @@ module.exports = {
   images: {
     domains: ['upload.wikimedia.org'],
   },
-  env: {
-    PUBLIC_URL: process.env.PUBLIC_URL
-  },
   webpack: (config, options) => {
     const { isServer } = options;
     const mfConf = {
@@ -28,7 +25,7 @@ module.exports = {
     config.cache = false;
     withModuleFederation(config, options, mfConf);
     if (!isServer) {
-      config.output.publicPath = `https://micro-fe-demo-app1.vercel.app/_next/`;
+      config.output.publicPath = "https://micro-fe-demo-app1.vercel.app/_next/";
     }
 
     return config;
