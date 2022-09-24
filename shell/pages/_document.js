@@ -10,7 +10,7 @@ class MyDocument extends Document {
 
     return (
       <Html>
-        <script src={`${process.env.APP1_SERVICE}/_next/static/runtime/remoteEntry.js`} />
+        <script src={`https://micro-fe-demo-app1.vercel.app/_next/static/runtime/remoteEntry.js`} />
         <script src={`${process.env.APP2_SERVICE}/_next/static/runtime/remoteEntry.js`} />
         <Head />
         <body>
