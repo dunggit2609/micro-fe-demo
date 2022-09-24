@@ -5,7 +5,9 @@ class MyDocument extends Document {
     return { ...initialProps };
   }
 
+
   render() {
+
     return (
       <Html>
         <script src={`${process.env.APP1_SERVICE}/_next/static/runtime/remoteEntry.js`} />

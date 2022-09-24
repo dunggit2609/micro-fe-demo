@@ -6,6 +6,9 @@ module.exports = {
   images: {
     domains: ['upload.wikimedia.org'],
   },
+  env: {
+    PUBLIC_URL: process.env.PUBLIC_URL
+  },
   webpack: (config, options) => {
     const { isServer } = options;
     const mfConf = {

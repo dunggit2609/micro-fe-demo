@@ -7,6 +7,11 @@ module.exports = {
   images: {
     domains: ['upload.wikimedia.org'],
   },
+  reactStrictMode: true,
+  env: {
+    APP1_SERVICE: process.env.APP1_SERVICE,
+    APP2_SERVICE: process.env.APP2_SERVICE,
+  },
   webpack: (config, options) => {
     const mfConf = {
       name: "shell",

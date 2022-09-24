@@ -3,6 +3,9 @@ import styles from '../styles/Home.module.css'
 
 
 export default function Home() {
+
+  console.log(    process.env.APP1_SERVICE
+    )
   return (
     <div className={styles.container}>
       <Head>
