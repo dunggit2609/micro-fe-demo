@@ -18,6 +18,9 @@ module.exports = {
         type: config.output.libraryTarget,
         name: "app2",
       },
+      env: {
+        PUBLIC_URL: process.env.PUBLIC_URL
+      },
       filename: "static/runtime/remoteEntry.js",
       remotes: {
       },
