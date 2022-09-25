@@ -8,7 +8,7 @@ class MyDocument extends Document {
   render() {
     return (
       <Html>
-        <script src="https://micro-fe-demo-app1.vercel.app/_next/static/runtime/app1RemoteEntry.js" />
+        <script src={`${process.env.APP1_SERVICE}/static/runtime/app1RemoteEntry.js`} />
         <script src="https://mf-app2.vercel.app/_next/static/runtime/app2RemoteEntry.js" />
         <Head />
         <body>
