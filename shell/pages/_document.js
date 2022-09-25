@@ -9,7 +9,7 @@ class MyDocument extends Document {
     return (
       <Html>
         <script src={`${process.env.APP1_SERVICE}/_next/static/runtime/app1RemoteEntry.js`} />
-        <script src={`${process.env.APP2_SERVICE}/_next/static/runtime/app2RemoteEntry.js`} />
+        <script src={`${process.env.APP2_SERVICE}/_next/static/runtime/remoteEntry.js`} />
         <Head />
         <body>
           <Main />
