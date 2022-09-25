@@ -18,7 +18,7 @@ module.exports = {
       library: {
         type: config.output.libraryTarget,
         name: "shell",
-      },
+      }, 
       remotes: {
         app1: "app1",
         app2: "app2", 

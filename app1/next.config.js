@@ -30,7 +30,7 @@ module.exports = {
     if (!isServer) {
       config.output.publicPath = `${process.env.PUBLIC_URL}/_next/`;
     }
-
+    
     return config;
   },
 
