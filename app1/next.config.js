@@ -11,6 +11,9 @@ module.exports = {
     const mfConf = {
       mergeRuntime: true, //experimental
       name: "app1",
+      env: {
+        PUBLIC_URL: process.env.PUBLIC_URL
+      },
       library: {
         type: config.output.libraryTarget,
         name: "app1",
@@ -25,7 +28,7 @@ module.exports = {
     config.cache = false;
     withModuleFederation(config, options, mfConf);
     if (!isServer) {
-      config.output.publicPath = "https://micro-fe-demo-app1.vercel.app/_next/";
+      config.output.publicPath = `${process.env.PUBLIC_URL}/_next/`;
     }
 
     return config;
