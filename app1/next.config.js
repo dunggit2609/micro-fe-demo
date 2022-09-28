@@ -6,14 +6,15 @@ module.exports = {
   images: {
     domains: ['upload.wikimedia.org'],
   },
+  env: {
+    PUBLIC_URL: process.env.PUBLIC_URL
+  },
   webpack: (config, options) => {
     const { isServer } = options;
     const mfConf = {
       mergeRuntime: true, //experimental
       name: "app1",
-      env: {
-        PUBLIC_URL: process.env.PUBLIC_URL
-      },
+
       library: {
         type: config.output.libraryTarget,
         name: "app1",
